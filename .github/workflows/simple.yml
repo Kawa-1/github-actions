@@ -30,4 +30,4 @@ jobs:
           npm -v
           python3 --version 
           echo "${{ steps.hello.outputs.HI}}"
-          echo "${{ join(steps.pewude.outputs.*, '\n') }}"
+          echo "${{ toJson(steps.pewude.outputs) }}"
