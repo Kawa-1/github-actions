@@ -17,7 +17,7 @@ jobs:
       - name: ls -la
         run: ls -la ./.github/workflows/scripts/
       - name: script
-        run: echo "pewude=$(./.github/workflows/scripts/pwd.sh)" >> "$GITHUB_OUTPUT"
+        run: echo "PEWUDE=$(./.github/workflows/scripts/pwd.sh)" >> "$GITHUB_OUTPUT"
         id: pewude
       - name: multiline script
         run: |
@@ -25,4 +25,4 @@ jobs:
           npm -v
           python3 --version 
           echo "${{ steps.hello.outputs.HI}}"
-          echo "${{ steps.script.outputs.pewude }}"
+          echo "${{ steps.pewude.outputs.PEWUDE }}"
