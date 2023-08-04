@@ -9,6 +9,8 @@ jobs:
       pwd_out: ${{ steps.script.outputs.pewude }}
     steps:
       - uses: actions/checkout@v3
+      - run: whoami
+      - run: chmod u+x,g+x ./.github/workflows/scripts/pwd.sh
       - name: echo a string
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
