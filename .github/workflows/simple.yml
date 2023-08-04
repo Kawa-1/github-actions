@@ -11,6 +11,6 @@ jobs:
         id: hello
       - name: multiline script
         run: |
-          node -v >> $GITHUB_OUTPUT
+          node -v
           npm -v 
           echo "${{ steps.hello.outputs.HI}}"
