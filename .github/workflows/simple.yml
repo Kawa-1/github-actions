@@ -1,11 +1,11 @@
 name: Shell commands
 
-on:
-  workflow_dispatch:
-  push:
-  pull_request:
-    types:
-      - closed
+# on:
+#   workflow_dispatch:
+#   push:
+#   pull_request:
+#     types:
+#       - closed
 
 jobs:
   run-shell-command:

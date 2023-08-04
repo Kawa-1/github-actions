@@ -1,11 +1,11 @@
 name: secondo jobbo
 
-on:
-  workflow_run:
-    workflows:
-      - Shell commands
-    types:
-      - completed
+# on:
+#   workflow_run:
+#     workflows:
+#       - Shell commands
+#     types:
+#       - completed
 
 jobs:
   job1:
