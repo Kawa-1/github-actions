@@ -24,4 +24,4 @@ jobs:
           node -v
           npm -v 
           echo "${{ steps.hello.outputs.HI}}"
-          echo "${{ steps.script.outputs.pwd_out }}"
+          echo "${{ steps.script.outputs.pewude }}"
