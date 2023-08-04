@@ -10,7 +10,7 @@ jobs:
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
       - name: LS -L
-        run: echo "$(ls -l)" >> "$GITHUB_OUTPUT"
+        run: echo $(ls -l) >> "$GITHUB_OUTPUT"
         id: lsl
       - name: script
         run: .github/workflows/scripts/pwd.sh >> $GITHUB_OUTPUT
