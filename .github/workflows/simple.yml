@@ -15,7 +15,7 @@ jobs:
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
       - name: ECHO PWD 
-        run: echo $pwd
+        run: echo $(pwd)
       - name: script
         run: echo "PEWUDE=$(./.github/workflows/scripts/pwd.sh)" >> "$GITHUB_OUTPUT"
         id: pewude
