@@ -1,4 +1,3 @@
 #!/bin/bash
 
 echo $pwd
-exit 1
