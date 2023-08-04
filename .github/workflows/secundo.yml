@@ -1,6 +1,11 @@
 name: secondo jobbo
 
-on: [push, workflow_dispatch]
+on:
+  workflow_run:
+    workflows:
+      - run-shell-command
+    types:
+      - completed
 
 jobs:
   job1:
