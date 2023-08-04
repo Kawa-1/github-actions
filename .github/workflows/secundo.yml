@@ -13,3 +13,6 @@ jobs:
           print(random.randint(0, 5))
         shell: python
         
+  job2:
+    steps:
+      - run: echo "XD"
