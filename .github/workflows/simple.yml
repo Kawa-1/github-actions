@@ -22,6 +22,7 @@ jobs:
       - name: multiline script
         run: |
           node -v
-          npm -v 
+          npm -v
+          python3 --version 
           echo "${{ steps.hello.outputs.HI}}"
           echo "${{ steps.script.outputs.pewude }}"
