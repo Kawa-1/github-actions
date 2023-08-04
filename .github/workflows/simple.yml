@@ -7,10 +7,14 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: echo a string
-        run: echo "HI=Hello World"
+        run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
+      - name: script
+        run: ./github/workflows/scripts/pwd.sh >> $GITHUB_OUTPUT
+        id: script
       - name: multiline script
         run: |
           node -v
           npm -v 
           echo "${{ steps.hello.outputs.HI}}"
+          echo "${{ steps.script.outputs }}"
