@@ -5,6 +5,7 @@ on: [push, workflow_dispatch]
 jobs:
   job1:
     runs-on: ubuntu-22.04
+    needs: [run-shell-command]
     steps:
       - name: siema
         run: |
