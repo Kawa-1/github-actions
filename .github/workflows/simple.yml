@@ -10,10 +10,7 @@ jobs:
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
       - name: multiline script
-        with:
-          siema: "${{ steps.hello.outputs.HI}}"
         run: |
           node -v >> $GITHUB_OUTPUT
           npm -v 
-          echo "${siema}"
-          
+          echo "${{ steps.hello.outputs.HI}}"
