@@ -10,7 +10,7 @@ jobs:
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
       - name: script
-        run: ls -l
+        run: ls -la
         id: script
       - name: multiline script
         run: |
