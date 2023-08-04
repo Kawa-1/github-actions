@@ -13,7 +13,7 @@ jobs:
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
       - name: script
-        run: ./github/workflows/scripts/pwd.sh
+        run: ./.github/workflows/scripts/pwd.sh
         id: pewude
       - name: multiline script
         run: |
