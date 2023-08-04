@@ -1,0 +1,14 @@
+name: secondo jobbo
+
+on: [push, workflow_dispatch]
+
+jobs:
+  job1:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: siema
+        run: |
+          import random
+          print(random.randint(5))
+        shell: python
+        
