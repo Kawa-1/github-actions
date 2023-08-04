@@ -9,6 +9,6 @@ jobs:
       - name: siema
         run: |
           import random
-          print(random.randint(5))
+          print(random.randint(0, 5))
         shell: python
         
