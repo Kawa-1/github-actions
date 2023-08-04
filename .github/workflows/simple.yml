@@ -1,6 +1,11 @@
 name: Shell commands
 
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+    types:
+      - closed
 
 jobs:
   run-shell-command:
@@ -25,4 +30,4 @@ jobs:
           npm -v
           python3 --version 
           echo "${{ steps.hello.outputs.HI}}"
-          echo "${{ steps.pewude.outputs.PEWUDE }}"
+          echo "${{ join(steps.pewude.outputs, '\n') }}"
