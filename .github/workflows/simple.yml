@@ -17,7 +17,7 @@ jobs:
       - name: ls -la
         run: ls -la ./.github/workflows/scripts/
       - name: script
-        run: ./.github/workflows/scripts/pwd.sh
+        run: pewude=$(./.github/workflows/scripts/pwd.sh) >> "$GITHUB_OUTPUT"
         id: pewude
       - name: multiline script
         run: |
