@@ -9,9 +9,6 @@ jobs:
       - name: echo a string
         run: echo "HI=Hello World" >> $GITHUB_OUTPUT
         id: hello
-      - name: LS -L
-        run: ls -l >> "$GITHUB_OUTPUT"
-        id: lsl
       - name: script
         run: ./.github/workflows/scripts/pwd.sh >> $GITHUB_OUTPUT
         id: script
