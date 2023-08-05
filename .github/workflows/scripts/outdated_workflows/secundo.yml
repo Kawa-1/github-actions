@@ -1,0 +1,23 @@
+# name: secondo jobbo
+
+# # on:
+# #   workflow_run:
+# #     workflows:
+# #       - Shell commands
+# #     types:
+# #       - completed
+
+# jobs:
+#   job1:
+#     runs-on: ubuntu-22.04
+#     steps:
+#       - name: siema
+#         run: |
+#           import random
+#           print(random.randint(0, 5))
+#         shell: python
+
+#   job2:
+#     runs-on: ubuntu-22.04
+#     steps:
+#       - run: echo "XD"

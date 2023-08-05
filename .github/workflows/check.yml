@@ -1,0 +1,13 @@
+name: Commando Shell
+
+on: [push]
+
+jobs:
+  commando:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: echo something
+        run: |
+          echo $GITHUB_ENV
+          echo $GITHUB_OUTPUT
+          echo "${{ job.status }}"
